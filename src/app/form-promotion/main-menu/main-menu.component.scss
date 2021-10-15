@@ -3,3 +3,50 @@
 nav.main-menu {
   @include blackBorder();
 }
+
+ol {
+  // @include black-border();
+  counter-reset: custom-counter;
+  list-style: none;
+  padding-left: 20px;
+  li {
+    @include mainBorder();
+    background-color: $main-theme-color;
+    padding: 10px 0 10px 50px;
+    // padding-left: 40px;
+    border-left: none;
+    border-top: none;
+    // padding: 10px;
+    // margin: 0 0 0.5rem 0;
+    counter-increment: custom-counter;
+    position: relative;
+    cursor: pointer;
+    ::before {
+      content: counter(custom-counter);
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      position: absolute;
+      --size: 32px;
+      left: calc(-1 * var(--size) + 30px);
+      line-height: var(--size);
+      width: var(--size);
+      height: var(--size);
+      top: 0;
+      background: $dark-gray;
+      border-radius: 50%;
+      text-align: center;
+      padding: 4px;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      
+    }
+  }
+  
+}

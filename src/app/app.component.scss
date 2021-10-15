@@ -3,8 +3,8 @@
 .container {
   @include redBorder();
   font-family: 'Lato', sans-serif;  
+  background-color: $main-bg;
 }
-
 .main-content {
   @include redBorder();
   display: flex;
