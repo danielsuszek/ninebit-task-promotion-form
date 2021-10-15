@@ -5,3 +5,7 @@
 @mixin mainBorder() {
   border: 2px solid #fff;
 }
+
+@mixin redBorder() {
+  border: 2px solid $warm-red;
+}
