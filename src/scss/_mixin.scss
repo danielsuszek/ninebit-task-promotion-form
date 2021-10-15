@@ -1,0 +1,7 @@
+@mixin blackBorder() {
+  border: 2px solid #000;
+}
+
+@mixin mainBorder() {
+  border: 2px solid #fff;
+}
