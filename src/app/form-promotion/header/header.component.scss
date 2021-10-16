@@ -1,5 +1,7 @@
 @import "../../../scss/main";
 
 header.header {
-  @include blackBorder();
+  h3 {
+    text-align: center;
+  }
 }

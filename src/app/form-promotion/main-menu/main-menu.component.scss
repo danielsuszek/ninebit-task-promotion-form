@@ -1,14 +1,18 @@
 @import "../../../scss/main";
 
 nav.main-menu {
-  @include blackBorder();
+  // @include blackBorder();
+  // border-color: $warm-red;
+  padding: 0;
 }
 
 ol {
-  // @include black-border();
+  // @include blackBorder();
+  // border-color: blue;
   counter-reset: custom-counter;
   list-style: none;
-  padding-left: 20px;
+  padding: 0;
+  margin: 0;
   li {
     @include mainBorder();
     background-color: $main-theme-color;

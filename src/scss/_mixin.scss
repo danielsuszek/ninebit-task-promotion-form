@@ -9,3 +9,7 @@
 @mixin redBorder() {
   border: 2px solid $warm-red;
 }
+
+@mixin thinBorder() {
+  border: 1px solid #000;
+}

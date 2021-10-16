@@ -1,12 +1,17 @@
 @import "./../scss/main";
 
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  @include redBorder();
+  // @include redBorder();
   font-family: 'Lato', sans-serif;  
   background-color: $main-bg;
 }
 .main-content {
-  @include redBorder();
+  // @include redBorder();
   display: flex;
 }
 
