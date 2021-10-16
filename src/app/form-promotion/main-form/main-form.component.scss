@@ -30,6 +30,7 @@ hr {
 
 .form-wrapper {
   // @include blackBorder();
+  width: 70vw;
   background-color: $main-theme-color;
   form {    
     // @include mainBorder();
