@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormPromotionModule } from './form-promotion/form-promotion.module';
 
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +15,9 @@ import { FormPromotionModule } from './form-promotion/form-promotion.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormPromotionModule
+    FormPromotionModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
