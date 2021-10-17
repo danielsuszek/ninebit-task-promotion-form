@@ -5,6 +5,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MainFormComponent } from './main-form/main-form.component';
 import { RouterModule } from '@angular/router';
 import { ChooseProductsComponent } from './choose-products/choose-products.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ChooseProductsComponent } from './choose-products/choose-products.compo
     HeaderComponent,
     MainMenuComponent,
     MainFormComponent,
-    ChooseProductsComponent
+    ChooseProductsComponent,
+    SummaryComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { ChooseProductsComponent } from './choose-products/choose-products.compo
     HeaderComponent,
     MainMenuComponent,
     MainFormComponent, 
-    ChooseProductsComponent   
+    ChooseProductsComponent,
+    SummaryComponent
   ]
 })
 export class FormPromotionModule { }
