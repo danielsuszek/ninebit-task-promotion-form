@@ -1,1 +1,83 @@
-<p>create-promotion works!</p>
+<div class="form-wrapper">
+  <form>
+    <section class="description">
+      <div class="section-header">
+        <p>Description</p>
+        <span class="isRequired">* is required</span>
+      </div>
+      <div class="fields">
+        <div class="field">
+          <input class="input-field" type="text" placeholder="Marketing name">
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="field">
+          <input class="input-field" type="text" placeholder="Technical name">
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="field">
+          <textarea class="input-field" name="" id="" cols="30" rows="10">
+            Description
+          </textarea>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+    </section>  
+    <hr>
+    <section class="conditions">
+      <div class="section-header">
+        <p>Conditions</p>
+        <span class="isRequired">* is required</span>
+      </div>      
+      <div class="fields">
+        <div class="field">
+          <select class="select-field">
+            <option>Option1</option>
+          </select><i class="fas fa-info-circle"></i>
+        </div>
+        <div class="field">
+          <select class="select-field">
+            <option>Option1</option>
+          </select><i class="fas fa-info-circle"></i>
+        </div>
+        <div class="field">
+          <input class="input-field" type="text" placeholder="Benefit amount">
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="date-fields">          
+          <input type="date" >
+          <div>
+            <input type="date" class="date-field">
+            <i class="fas fa-info-circle"></i>
+          </div>
+        </div>
+        <div class="radio-buttons">
+          <div>
+            <input type="radio" id="bussiness-condition" name="bussiness-condition"
+             value="bussiness-condition" checked>
+            <label for="bussiness-condition">Bussiness condition</label>
+          </div>  
+          <div>
+            <input type="radio" id="base-price" name="base-price" value="base-price">
+            <label for="base-price">Base price 100%</label>
+          </div>  
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="check-button">
+          <div>
+            <input type="checkbox" id="connect-prom" name="connect-prom"
+                   checked>
+            <label for="connect-prom">Connect with other promotions</label>
+          </div>
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="check-button">
+          <div>
+            <input type="checkbox" id="back-prom" name="back-prom">
+            <label for="back-prom">Back promotion</label>
+          </div>
+          <i class="fas fa-info-circle"></i>
+        </div>
+      </div>
+    </section>
+  </form>
+</div>
