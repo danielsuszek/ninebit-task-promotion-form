@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { ChooseProductsComponent } from './choose-products/choose-products.component';
 import { SummaryComponent } from './summary/summary.component';
 
-
 @NgModule({
   declarations: [
     HeaderComponent,
