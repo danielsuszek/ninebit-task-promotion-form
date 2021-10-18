@@ -7,7 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', component: MainFormComponent},
   { path: 'choose-products', component: ChooseProductsComponent},
-  { path: 'promotions', component: SummaryComponent}
+  // { path: 'promotions', component: SummaryComponent},
+  { path: 'promotions', loadChildren: () => import('./promotions/promotions.module').then(m => m.PromotionsModule) }
 ];
 
 @NgModule({
