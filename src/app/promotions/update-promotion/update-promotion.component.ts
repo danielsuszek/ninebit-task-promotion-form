@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-update-promotion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdatePromotionComponent implements OnInit {
 
-  constructor() { }
+  promotionId: number = 0;
+  
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(data => {
+      this.promotionId = data.id});
   }
 
 }

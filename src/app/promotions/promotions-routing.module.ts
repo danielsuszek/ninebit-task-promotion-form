@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: PromotionsComponent },
   { path: 'create', component: CreatePromotionComponent },
   { path: 'list', component: GetAllPromotionsComponent },
-  { path: 'update', component: UpdatePromotionComponent },
+  { path: 'update/:id', component: UpdatePromotionComponent },
   { path: 'delete', component: DeletePromotionComponent },
 
 ];
